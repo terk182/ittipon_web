@@ -1,10 +1,10 @@
 <?php
 session_start();
 //Create Constants to Store Non Repeating Value
-define('LOCALHOST', '127.0.0.1');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'may_magin');
+define('LOCALHOST', 'remotemysql.com');
+define('DB_USERNAME', 'K7t9TUiBNw');
+define('DB_PASSWORD', 'mv9l5ELcVf');
+define('DB_NAME', 'K7t9TUiBNw');
 
 $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_connect_error());;
 $db_select = mysqli_select_db($conn, DB_NAME);
