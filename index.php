@@ -82,7 +82,7 @@
       <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ittipon Tana</h1>
       <p>Programmer and electronic engineer</p>
       <p>ถ้าคุณมองหา โปรแกรมเมอร์ และ วิศวกร ที่ทำงานได้หลากหลายบทบาท ผมน่าจะเป็นตัวเหลือกที่ดี</p>
-      <img src="assets/terk1.JPG" alt="boy" class="w3-image" style="width:50%">
+      <img src="assets/terk.jpg" alt="boy" class="w3-image" style="width:50%">
     </header>
 
     <!-- About Section -->
