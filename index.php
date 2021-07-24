@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
   body,
   h1,
@@ -260,11 +261,11 @@
         </div>
       </div>
       <!-- Testimonials -->
-    
-<!-- Right Column -->
 
-    
-    
+      <!-- Right Column -->
+
+
+
       <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
       <div class="w3-container">
         <h5 class="w3-opacity"><b>programmer</b></h5>
@@ -283,9 +284,9 @@
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
       </div>
-   
 
-    
+
+
       <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
       <div class="w3-container">
         <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
@@ -304,82 +305,131 @@
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
         <p>Bachelor Degree</p><br>
       </div>
-    
-
-  <!-- End Right Column -->
- 
-
-    <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
-      <h2 class="w3-text-light-grey">My Photos</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
 
 
-      <?php
-      $dir_name = "picture/";
-      $images = glob($dir_name . "*.jpg");
-      foreach ($images as $image) {
-      ?>
-        <div class="w3-row-padding" style="margin:0 -16px">
-          <?php
-          echo '<img src="' . $image . '" style="width:50%" ><br />';
-
-          $text = substr($image, 8);
-          $pos = strpos($text, '.');
-          $text1 = substr($text, 0, $pos);
-          echo '<h4>' . $text1 . '</h4><br />';
-          ?>
-        </div>
-      <?php
-      }
+      <!-- End Right Column -->
 
 
-      ?>
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Photos</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <!-- Grid for photos -->
+
+
+        <?php
+        $dir_name = "picture/";
+        $images = glob($dir_name . "*.jpg");
+        foreach ($images as $image) {
+        ?>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <?php
+            echo '<img src="' . $image . '" style="width:50%" ><br />';
+
+            $text = substr($image, 8);
+            $pos = strpos($text, '.');
+            $text1 = substr($text, 0, $pos);
+            echo '<h4>' . $text1 . '</h4><br />';
+            ?>
+          </div>
+        <?php
+        }
+
+
+        ?>
 
 
 
 
-    </div>
+      </div>
 
-    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-      <h2 class="w3-text-light-grey">Contact Me</h2>
-      <hr style="width:200px" class="w3-opacity">
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
 
-      <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> nan, Thai</p>
-        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +66 0626628551</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ittipon.tana.terk@gmail.com</p>
-      </div><br>
-      <p>Let's get in touch. Send me a message:</p>
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> nan, Thai</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +66 0626628551</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ittipon.tana.terk@gmail.com</p>
+        </div><br>
+        <p>Let's get in touch. Send me a message:</p>
 
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email" id="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" id="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" id="Message"></p>
         <p>
-          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit" onclick="record();">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </p>
-      </form>
+
+
+      </div>
+
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <a href="https://www.facebook.com/ittipon.tana" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+        <i class="fab fa-github"></i>
+
+
+
+
+      </footer>
+
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      function record() {
+        let Name = document.getElementById('Name').value;
+        let Email = document.getElementById('Email').value;
+        let Subject = document.getElementById('Subject').value;
+        let Message = document.getElementById('Message').value;
+        console.log(Name);
+        console.log(Email);
+        console.log(Subject);
+        console.log(Message);
 
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <a  href="https://www.facebook.com/ittipon.tana" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-      
-      <i class="fab fa-github"></i>
+        if (validateEmail(Email) && Name !== '' && Email !== '' && Subject !== '' && Message !== '')
+        {
+          $.ajax({
+          url: 'record.php',
+          method: "POST",
+          data: {
+            name: Name,
+            email: Email,
+            subject: Subject,
+            message: Message
+          },
 
- 
-      
+          success: function(data) {
+            alert(data);
 
-    </footer>
+          },
+          error: function() {
+            alert("ไม่สามารถหาข้อมูลได้");
+          }
+
+        });
+        }
+        else
+        {
+          alert("กรุณากรอกข้อมูลให้ครบ");
+        }
+        
+
+      }
+
+      function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
+    </script>
 
 
-  </div>
 
 </body>
 
