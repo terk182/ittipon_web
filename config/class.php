@@ -31,7 +31,7 @@ class DB_con
         date_default_timezone_set('asia/bangkok');
         $date_now = date("Y-m-d");
         $time_now = date("H:i:s");
-        $result = mysqli_query($this->dbcon, "INSERT INTO `may_magin`.`message` (`create_date`, `create_time`, `name`, `email`, `subject`, `message`) VALUES ('$date_now', '$time_now', '$name', '$email', '$subject', '$message')");
+        $result = mysqli_query($this->dbcon, "INSERT INTO `message` (`create_date`, `create_time`, `name`, `email`, `subject`, `message`) VALUES ('$date_now', '$time_now', '$name', '$email', '$subject', '$message')");
         return $result;
     }
 
