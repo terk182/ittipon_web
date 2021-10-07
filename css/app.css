@@ -923,4 +923,23 @@ a {
     font-weight: 400;
 }
 
+button.btn-action {
+	font-family: 'Fira Mono', monospace;
+    
+	color: #755eb5;
+	border: none;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px 30px;
+	font-size: 18px;
+	cursor: pointer;
+	border: 2px solid #fff;
+	-webkit-box-shadow: 0 10px 20px -5px rgba(19, 31, 51, .65);
+	box-shadow: 0 10px 20px -5px rgba(19, 31, 51, .65);
+}
+
+
+  
+  
+
 /* ----- Footer Section End ----- */
